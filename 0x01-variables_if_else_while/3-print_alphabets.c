@@ -1,36 +1,24 @@
 #include <stdio.h>
-
+#include <stdlib.h>
 
 /**
-
- * main - Prints the alphabet.
-
+ * main - start and end of my function
  *
-
- * Return: Always 0 (Success)
-
+ * Description: prints the alphabet in lowercase, followed by a new line
+ *
+ * Return: return value 0
  */
 
 int main(void)
-
 {
+	char i;
 
-char alp[52] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+	for (i = 'a' ; i <= 'z' ; i++)
+		putchar(i);
+	for (i = 'A' ; i <= 'Z' ; i++)
+		putchar(i);
 
-        int i;
+	putchar('\n');
 
-
-        for (i = 0; i < 52; i++)
-
-        {
-
-                putchar(alp[i]);
-
-        }
-
-        putchar('\n');
-
-        return (0);
-
-}
+	return (0);
 

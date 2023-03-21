@@ -1,34 +1,22 @@
 #include <stdio.h>
-
+#include <stdlib.h>
 
 /**
-
- * main - Prints numbers from 0 to 9.
-
+ * main - execution starts and ends in the main function
  *
-
- * Return: Always 0 (Success)
-
+ * Description: use putchar to print a digit
+ *
+ * Return:return value is (0)
  */
 
 int main(void)
-
 {
+	int i;
 
-        int i;
+	for (i = 0 ; i < 10 ; i++)
+		putchar(i + '0');
 
+	putchar('\n');
 
-        for (i = 48; i < 58; i++)
-
-        {
-
-                putchar(i);
-
-        }
-
-        putchar('\n');
-
-        return (0);
-
+	return (0);
 }
-

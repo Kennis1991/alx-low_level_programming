@@ -1,34 +1,20 @@
-#include <eetdio.h>
-
+#include <stdio.h>
 
 /**
-
- * main - Prints numbers from 0 to 9.
-
+ * main - execution starts and end here
  *
-
- * Return: Always 0 (Success)
-
+ * Description:print base of ten
+ *
+ * Return:return value is (0)
  */
 
 int main(void)
-
 {
+	int i;
 
-        int i;
+	for (i = 0 ; i < 10 ; i++)
+		printf("%d", i);
+	printf("\n");
 
-
-        for (i = 0; i < 10; i++)
-
-        {
-
-                printf("%d", i);
-
-        }
-
-        putchar('\n');
-
-        return (0);
-
+	return (0);
 }
-

@@ -1,42 +1,27 @@
 #include <stdio.h>
 
-
 /**
-
- * main - prints all possible combinations of single-digit numbers
-
- * Return: Always 0 (Success)
-
+ * main - execution starts and end in the main function
+ *
+ * Description: print singles numbers seperated by comma
+ *
+ * Return:return value is (0)
  */
 
 int main(void)
-
 {
+	int i;
 
-        int n;
+	for (i = 0 ; i < 10 ; i++)
+	{
+		putchar(i + '0');
+		if (i != 9)
+		{
+			putchar(',');
+			putchar(' ');
+		}
+	}
+	putchar('\n');
 
-
-        for (n = 48; n < 58; n++)
-
-        {
-
-                putchar(n);
-
-                if (n != 57)
-
-                {
-
-                        putchar(',');
-
-                        putchar(' ');
-
-                }
-
-        }
-
-        putchar('\n');
-
-        return (0);
-
+	return (0);
 }
-
